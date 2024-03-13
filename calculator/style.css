@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 370px;
+    height: auto;
+    column-gap: 50px;
+    margin-top: 20vh;
+    padding: 20px;
+    background: grey;
+}
+
+.container input {
+    width: 330px;
+    height: 70px;
+    margin-bottom: 50px;
+    text-align: right;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+}
+
+.btn button {
+    width: 70px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 25px;
+    border: none;
+}
+
+.btn button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.symbols {
+    background: green;
+}
+
+.c {
+    display: flex;
+    /* align-items: ; */
+    margin-right: -220px;
+}
+
+.btn :nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        background-color: rgb(37, 34, 34);
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .display {
+        width: 100%;
+        height: 100px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-size: 65px;
+    }
+
+    .container .btn div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container .btn div button {
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        font-size: 35px;
+        background-color: black;
+        color: white;
+        box-shadow: none;
+    }
+
+    .container .btn div button:hover {
+        box-shadow: 0 0px 10px white;
+    }
+
+    .container .btn .c {
+        margin-right: -265px;
+        padding: 0;
+    }
+
+    .container .btn .c button {
+        background-color: red;
+    }
+
+    .container .btn div .symbols {
+        background-color: orange;
+    }
+
+}
